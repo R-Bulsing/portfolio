@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dit is mijn portfolio. Get to know me.">
+    <meta name="keywords" content="Rianne's portfolio, portfolio">
+    <meta name="author" content="Rianne Bulsing">
+    <title>Rianne's portfolio</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="media/favicon/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/7c3398e338.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700&display=swap" rel="stylesheet">
+    <script defer src="js/portfolio.js"></script>
+</head>
+<body>
+<!-- navbar -->
+<nav class="navbar">
+    <div class="logo">Rianne's portfolio</div>
+
+    <!-- Hamburger los -->
+    <a href="javascript:void(0)" class="icon" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars" id="openIcon"></i>
+        <i class="fa-solid fa-xmark" id="closeIcon"></i>
+    </a>
+
+    <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="over.html">Over mij</a></li>
+        <li><a href="php/projecten.php">Projecten</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+    <!-- hero header -->
+     <div class="hero-header">
+        <div class="titel">
+            <h1>Van concept tot creatie, waar elke regel code een verhaal vertelt</h1>
+            <a href="#introductie" class="hero-button">
+            <button>Duik in mijn wereld van software</button>
+            </a>
+        </div>
+     </div>
+
+     <div id="introductie"></div>
+
+     <!-- mini bio -->
+      <div class="over-text">
+        <div class="introductie">
+            <h2 class="sub-titel">Hi! Ik ben Rianne Bulsing</h2>
+            <p>Welkom op mijn portfolio! Ik ben 19 jaar en tweedejaars Creative Software Developer aan het Grafisch Lyceum in Rotterdam.<br><br>
+            Ik maak graag digitale projecten, van websites tot apps, en vind het leuk om creatieve en technische oplossingen te combineren.<br><br>
+            Bekijk vooral mijn projecten en ontdek waar ik trots op ben!</p>
+        </div>
+    </div>
+
+     <!-- mini showcase portfolio -->
+     <section id="home-projects">
+        <h2 class="sub-titel" style="color: #2C3E50;">Bekijk hier mijn projecten</h2>
+        <div class="card-container">
+                <div class="card">
+                    <img src="media/images/volume75.png" alt="Volume 75">
+                    <div class="card-content">
+                        <h3>Volume 75</h3>
+                        <p>Extern project voor het 75-jarig jubileum van het Grafisch Lyceum, met een teaser van het feest. We hebben gewerkt met HTML, CSS, JavaScript en PHP. Ondanks uitdagingen in de taakverdeling door vertrek van de groepsoprichter, hebben we dankzij goede samenwerking het project succesvol afgerond.</p>
+                        <div class="buttons">
+                            <button class="btn" onclick="window.open('php/projecten.php', '_blank')">Naar projectpagina</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <img src="media/images/windows95.png" alt="Windows95">
+                    <div class="card-content">
+                        <h3>Windows95</h3>
+                        <p>Project tijdens de Make-a-thon 2024 met het thema retro. We maakten een namaakversie van Windows 95 met retrogames, waaronder de Snake-game die ik ontwikkelde. Gemaakt met HTML, CSS, JavaScript en 95.css. Dankzij goede samenwerking werd ons team eerste van de eerstejaars.</p>
+                        <div class="buttons">
+                            <button class="btn" onclick="window.open('php/projecten.php', '_blank')">Naar projectpagina</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="media/images/quizzy.png" alt="Quizzy">
+                    <div class="card-content">
+                        <h3>Quizzy</h3>
+                        <p>Derde beroepsproject: een quizsite met leerzame thema&rsquo;s. Wij kozen Mediawijsheid en maakten per subthema een eigen quiz. Gemaakt met HTML, CSS en JavaScript. Ondanks een conflict in de groep hebben we het project succesvol afgerond en een mooie website neergezet.</p>
+                        <div class="buttons">
+                            <button class="btn" onclick="window.open('php/projecten.php', '_blank')">Naar projectpagina</button>
+                        </div>
+                </div>
+        </div>
+    </section>
+    
+
+      <!-- footer -->
+       <div class="footer">
+            <div class="footer-nav">
+                <h3>Quick links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="over.html">Over mij</a></li>
+                    <li><a href="php/projecten.php">Projecten</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="media/files/cv_RianneBulsing.pdf" download>Download mijn cv</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <ul class="contact-info">
+                    <li><a href="mailto:101934@glr.nl">E-mail: 101934@glr.nl</a></li>
+                    <li>Woonplaats: Nesselande, Rotterdam</li>
+                </ul>
+                <h3>Social media</h3>
+                <div class="socials">
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/rianne-bulsing-071a0338a"><i class="linkedin fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="https://github.com/R-Bulsing" target="_blank"><i class="github fa-brands fa-github"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+       </div>
+<div class="copy">
+    <p>&#169; 2025 Rianne's portfolio. Alle rechten voorbehouden.</p>
+</div>
+</body>
+</html>

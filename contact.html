@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Neem contact met mij op.">
+    <meta name="keywords" content="Rianne's portfolio, portfolio">
+    <meta name="author" content="Rianne Bulsing">
+    <title>Contact | Rianne's portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="media/favicon/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/7c3398e338.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700&display=swap" rel="stylesheet">
+    <script defer src="js/portfolio.js"></script>
+</head>
+<body>
+
+<!-- navbar -->
+<nav class="navbar">
+    <div class="logo">Rianne's portfolio</div>
+
+    <!-- Hamburger los -->
+    <a href="javascript:void(0)" class="icon" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars" id="openIcon"></i>
+        <i class="fa-solid fa-xmark" id="closeIcon"></i>
+    </a>
+
+    <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="over.html">Over mij</a></li>
+        <li><a href="php/projecten.php">Projecten</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+</nav>
+
+ <!-- header -->
+ <div class="header">
+    <div class="header-titel">
+        <h1>Contact</h1>
+    </div>
+ </div>
+
+<div class="contact-container">
+    <form action="php/contact-versturen.php" method="post">
+      <div class="row">
+        <div class="col-25">
+          <label for="FLName">Voornaam</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="FLName" name="FLName" placeholder="Uw naam..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="email">E-mail</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="email" name="email" placeholder="Uw e-mail.." required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="subject">Bericht</label>
+        </div>
+        <div class="col-75">
+          <textarea id="subject" name="subject" placeholder="Uw bericht.." style="height:200px"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <input type="submit" value="Verstuur">
+      </div>
+    </form>
+  </div>
+
+  <!-- footer -->
+  <div class="footer">
+    <div class="footer-nav">
+        <h3>Quick links</h3>
+        <ul class="footer-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="over.html">Over mij</a></li>
+            <li><a href="php/projecten.php">Projecten</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="media/files/cv_RianneBulsing.pdf" download>Download mijn cv</a></li>
+        </ul>
+    </div>
+    <div class="footer-contact">
+        <h3>Contact</h3>
+        <ul class="contact-info">
+          <li><a href="mailto:101934@glr.nl">E-mail: 101934@glr.nl</a></li>
+          <li>Woonplaats: Nesselande, Rotterdam</li>
+        </ul>
+        <h3>Social media</h3>
+        <div class="socials">
+          <ul>
+              <li><a href="https://www.linkedin.com/in/rianne-bulsing-071a0338a"><i class="linkedin fa-brands fa-linkedin"></i></a></li>
+              <li><a href="https://github.com/R-Bulsing" target="_blank"><i class="github fa-brands fa-github"></i></a></li>
+          </ul>
+      </div>
+    </div>
+</div>
+<div class="copy">
+    <p>&#169; 2025 Rianne's portfolio. Alle rechten voorbehouden.</p>
+</div>
+</body>
+</html>
